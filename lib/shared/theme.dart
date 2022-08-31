@@ -6,6 +6,7 @@ Color purpleColor = const Color(0xff4141A4);
 Color whiteColor = const Color(0xffFFFFFF);
 Color greyColor = const Color(0xffB3B5C4);
 Color softGreyColor = const Color(0xffF1F0F5);
+Color softGreyColor1 = const Color(0xffECEDF1);
 Color blackColor = const Color(0xff272C2F);
 Color redColor = const Color(0xffFD4F56);
 

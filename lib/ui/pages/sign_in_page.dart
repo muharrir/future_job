@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:future_job/shared/theme.dart';
+import 'package:future_job/ui/pages/home_page.dart';
 import 'package:future_job/ui/pages/sign_up_page.dart';
 import 'package:future_job/ui/widgets/custom_text_form_field.dart';
 
@@ -76,7 +77,10 @@ class SignInPage extends StatelessWidget {
 
     Widget buttonSection() {
       return Container(
-        margin: const EdgeInsets.only(top: 40),
+        margin: const EdgeInsets.only(
+          top: 40,
+          bottom: 30,
+        ),
         child: Column(
           children: [
             SizedBox(
@@ -89,7 +93,12 @@ class SignInPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(66),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HomePage()));
+                },
                 child: Text(
                   'Sign In',
                   style: whiteTextStyle.copyWith(fontWeight: semiBold),
